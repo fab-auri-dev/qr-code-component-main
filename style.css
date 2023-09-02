@@ -1,0 +1,81 @@
+:root {
+    --white: hsl( 0, 0%, 100% );
+    --light-gray: hsl( 212, 45%, 89% );
+    --grayish-blue: hsl( 220, 15%, 55% );
+    --dark-blue: hsl( 218, 44%, 22% );
+
+    /* Weights: 400, 700 */
+    --ff-outfit: 'Outfit';
+    --font-size: 0.938rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var( --light-gray );
+
+    font-family: var( --ff-outfit );
+    font-size: var( --ff-outfit );
+}
+
+img {
+    width: 100%;
+}
+
+.qr-widget-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 20rem;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    background-color: var( --white );
+
+    border-radius: 1rem;
+
+    text-align: center;
+}
+
+.qr-widget-img {
+    height: 20rem;
+    width: 100%;
+
+    background-image: url( './images/image-qr-code.png' );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: .5rem;
+}
+
+.qr-widget-content {
+    padding: 1.5rem 1rem;
+}
+
+.qr-widget-title {
+    color: var( --dark-blue );
+    font-weight: 700;
+}
+
+.qr-widget-desc {
+    color: var( --grayish-blue );
+
+    padding-top: .75rem;
+}
+
+
+
